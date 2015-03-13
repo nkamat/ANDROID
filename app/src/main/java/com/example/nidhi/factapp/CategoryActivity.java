@@ -23,7 +23,7 @@ public class CategoryActivity extends ActionBarActivity {
             public void onClick(View v) {
 
                 View rootView = getWindow().getDecorView().findViewById(android.R.id.content);
-                new FetchFactTask(v.getContext(), rootView,R.id.scienceButton, FactsProvider.CATEGORY_SCIENCE ).execute();
+                new FetchFactTask(v.getContext(), rootView,R.id.scienceButton, FactsProvider.CATEGORY_SCIENCE ).loadInBackground();
 
             }
         });
@@ -36,7 +36,7 @@ public class CategoryActivity extends ActionBarActivity {
             public void onClick(View v) {
 
                 View rootView = getWindow().getDecorView().findViewById(android.R.id.content);
-                new FetchFactTask(v.getContext(), rootView,R.id.historyButton, FactsProvider.CATEGORY_HISTORY ).execute();
+                new FetchFactTask(v.getContext(), rootView,R.id.historyButton, FactsProvider.CATEGORY_HISTORY ).loadInBackground();
 
             }
         });
@@ -48,7 +48,7 @@ public class CategoryActivity extends ActionBarActivity {
             @Override
             public void onClick(View v) {
                 View rootView = getWindow().getDecorView().findViewById(android.R.id.content);
-                new FetchFactTask(v.getContext(), rootView,R.id.geographyButton, FactsProvider.CATEGORY_GEOGRAPHY ).execute();
+                new FetchFactTask(v.getContext(), rootView,R.id.geographyButton, FactsProvider.CATEGORY_GEOGRAPHY ).loadInBackground();
 
             }
         });
@@ -60,7 +60,7 @@ public class CategoryActivity extends ActionBarActivity {
             @Override
             public void onClick(View v) {
                 View rootView = getWindow().getDecorView().findViewById(android.R.id.content);
-                new FetchFactTask(v.getContext(), rootView,R.id.technologyButton, FactsProvider.CATEGORY_TECHNOLOGY ).execute();
+                new FetchFactTask(v.getContext(), rootView,R.id.technologyButton, FactsProvider.CATEGORY_TECHNOLOGY ).loadInBackground();
 
             }
         });
@@ -72,7 +72,7 @@ public class CategoryActivity extends ActionBarActivity {
             @Override
             public void onClick(View v) {
                 View rootView = getWindow().getDecorView().findViewById(android.R.id.content);
-                new FetchFactTask(v.getContext(), rootView,R.id.foodButton, FactsProvider.CATEGORY_FOOD ).execute();
+                new FetchFactTask(v.getContext(), rootView,R.id.foodButton, FactsProvider.CATEGORY_FOOD ).loadInBackground();
 
             }
         });
@@ -84,7 +84,7 @@ public class CategoryActivity extends ActionBarActivity {
             @Override
             public void onClick(View v) {
                 View rootView = getWindow().getDecorView().findViewById(android.R.id.content);
-                new FetchFactTask(v.getContext(), rootView,R.id.animalButton, FactsProvider.CATEGORY_ANIMAL ).execute();
+                new FetchFactTask(v.getContext(), rootView,R.id.animalButton, FactsProvider.CATEGORY_ANIMAL ).loadInBackground();
 
             }
         });
